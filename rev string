@@ -1,0 +1,23 @@
+ class prod{ 
+    public static void rev(string s){
+   string r ="";
+for (int i =s.Length-1;i>=0;i--){
+    r=r+s[i];
+  // Console.WriteLine($"s  {s[i]}"); 
+//Console.WriteLine($"r  {r}"); 
+
+}
+//Console.WriteLine("b is ", b);
+Console.WriteLine($"reveresed string is = {r}"); 
+  }
+ }
+  class sol{
+   public static void Main(String[] args){
+    
+    //Console.Writeline("enter String");
+Console.WriteLine("enter");
+    char[] s=Console.ReadLine();
+Console.WriteLine($"entered string is= {s}");
+prod.rev(s);
+  }
+  }
