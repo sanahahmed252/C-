@@ -16,7 +16,7 @@ Console.WriteLine($"reveresed string is = {r}");
     
     //Console.Writeline("enter String");
 Console.WriteLine("enter");
-    char[] s=Console.ReadLine();
+    string s=Console.ReadLine();
 Console.WriteLine($"entered string is= {s}");
 prod.rev(s);
   }
