@@ -1,0 +1,9 @@
+Console.WriteLine("enter String");
+char[] s= (Console.ReadLine()).ToCharArray();
+string read= new string(s);
+Console.WriteLine($"new string is  ={read}");
+//Console.WriteLine($"entered string={s}");
+Array.Reverse(s);
+
+String rev= new string(s);
+Console.WriteLine($"reversed string is= {rev}");
