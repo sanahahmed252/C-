@@ -1,0 +1,6 @@
+Console.WriteLine("enter String");
+char[] s= (Console.ReadLine()).ToCharArray().Distinct().ToArray();
+string read= new string(s);
+//string x=string.empty();
+Console.WriteLine($"new string is  ={read}");
+//Console.WriteLine($"entered string={s}");
