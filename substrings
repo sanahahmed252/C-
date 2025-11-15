@@ -1,0 +1,22 @@
+using System.Text;
+Console.WriteLine("enter String");
+char[] s= (Console.ReadLine()).ToCharArray().Distinct().ToArray();
+string read= new string(s);
+
+Console.WriteLine($"new string is  ={read}");
+ for (int i=0;i<read.Length;i++){
+
+
+   StringBuilder builder= new StringBuilder(read.Length-1);
+   //Console.WriteLine($"new char is {c}");
+//builder.Append(c);
+for (int j=i;j<read.Length;j++){
+   builder.Append(read[j]);
+//Console.WriteLine($" c is {c} and read is {read[i]}");
+Console.WriteLine($"build string is {builder.ToString()}");   
+
+
+    }
+     
+}
+ 
