@@ -1,0 +1,36 @@
+using System;
+class hi{
+public static void Main(string[] args){
+     Console.WriteLine("List of twisted prime numbers is:" );
+for(int s=0;s<100;s++){
+    int revno=rev(s);
+   
+   if ( IsPtime(s)&& IsPtime(revno))
+{
+    Console.WriteLine( s );
+}
+   }
+}
+   public static  int rev(int  num){
+    int rev=0;
+ while(num>0 && num<100){
+  
+    rev=rev*10+num%10;
+    num=num/10;
+     
+    }
+    return rev;
+    
+ 
+}
+public static bool IsPtime(int num){
+    bool isPtime=true;
+if (num%2==0){
+    
+    isPtime=false;
+}
+
+
+return isPtime;
+}
+}
