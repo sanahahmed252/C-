@@ -1,0 +1,30 @@
+using System;
+Console.WriteLine("enter number");
+int rev=0;
+int s= Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"entered no is {s}");
+while(s>0){
+  
+   rev=rev*10+s%10;
+   s=s/10;
+   }
+Console.WriteLine($"rev no is{rev}");
+  
+if(IsPrime(s) && rev%2!=0){
+    Console.WriteLine("twisted prime");
+
+}else{
+    Console.WriteLine(" not twisted prime");
+}
+if (s%2!=0){
+    Console.WriteLine("s is prime");
+}
+else{
+    Console.WriteLine("s is not prime");
+}
+if (rev%2!=0){
+    Console.WriteLine("rev is prime");
+}
+else{
+    Console.WriteLine("rev is not prime");
+}
